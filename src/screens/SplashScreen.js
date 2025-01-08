@@ -16,7 +16,7 @@ export const SplashScreen = ({ navigation }) => {
   
       const timer = setTimeout(() => {
         navigation.replace("Home");
-      }, 5000); 
+      }, 1000); 
   
       return () => clearTimeout(timer); 
     }, [navigation, fadeAnim]);
@@ -24,7 +24,7 @@ export const SplashScreen = ({ navigation }) => {
     return (
       <View style={styles.splashContainer}>
         <Animated.View style={{  opacity: fadeAnim }}>
-          <Text style={styles.splashText}>ASHC</Text>
+          <Text style={styles.splashText}>Apex</Text>
         </Animated.View>
       </View>
     );
